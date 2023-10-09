@@ -1,0 +1,94 @@
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="20"
+		android:layout_height="20"
+		android:id="TV1"
+		android:text="Dummy text"/>
+	
+	<RadioGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:childrenAmount="3">
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB1"
+			android:text="Option 1"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB32"
+			android:text="option 2"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB2"
+			android:text="option 2"/>
+
+	</RadioGroup>
+
+	<RadioGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="TEstbutton"
+		android:childrenAmount="3"
+		android:checkedButton="RB15">
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB125"
+			android:text="Option 1"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB11"
+			android:text="option 2"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB24"
+			android:text="option 2"/>
+
+	</RadioGroup>
+<!-- This is a comment, ignore me! -->
+	<RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+		<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="image_name"
+		android:padding="50"/>
+
+	</RelativeLayout>
+
+	<ProgressBar
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:max="100"
+	android:progress="100"/>
+
+	<ProgressBar
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:max="100"
+	android:progress="101"/>
+
+	<ProgressBar
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:max="101"
+	android:progress="-2"/>
+
+</LinearLayout>

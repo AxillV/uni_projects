@@ -1,0 +1,24 @@
+# scheduler SJF reverse.txt
+
+PID 3627 - CMD: work1
+                        Elapsed time = 1.010 secs
+                        Workload time = 1.010 secs
+PID 3628 - CMD: work2
+                        Elapsed time = 2.010 secs
+                        Workload time = 3.020 secs
+PID 3629 - CMD: work3
+                        Elapsed time = 3.010 secs
+                        Workload time = 6.030 secs
+PID 3630 - CMD: work4
+                        Elapsed time = 4.010 secs
+                        Workload time = 10.040 secs
+PID 3631 - CMD: work5
+                        Elapsed time = 5.010 secs
+                        Workload time = 15.050 secs
+PID 3632 - CMD: work6
+                        Elapsed time = 6.010 secs
+                        Workload time = 21.060 secs
+PID 3633 - CMD: work7
+                        Elapsed time = 7.010 secs
+                        Workload time = 28.070 secs
+WORKLOAD TIME: 28.070 seconds

@@ -1,0 +1,37 @@
+root            ::=     linear | relative
+
+linear          ::=     S_LINEAR linearattr '>' element E_LINEAR '>'
+relative        ::=     S_RELATIVE relativeattr '>' element E_RELATIVE '>'
+                        | S_RELATIVE relativeattr '>' E_RELATIVE '>'
+
+element         ::=     element element | linear | relative | text | image | button | radio | progress
+
+textview        ::=     TEXTVIEW textattr '/' '>'
+image           ::=     IMAGE imageattr '/' '>'
+button          ::=     BUTTON buttonattr '/' '>'
+radiogrp        ::=     S_RADIOGRP radiogrpattr '>' radiobtnnoempty E_RADIOGRP '>'
+radiobtn        ::=     radiobtn radiobtn
+                        | RADIOBTN radiobtnattr '/' '>'
+progress        ::=     PROGRESS progressattr '/' '>' 
+
+linearattr      ::=     width height id orientation
+relativeattr    ::=     width height id                             
+textattr        ::=     width height id text color                 
+imageattr       ::=     width height id src padding
+buttonattr      ::=     width height id text padding
+radiogrpattr    ::=     width height id childamount checkedbtn
+radiobtnattr    ::=     width height id text
+progressattr    ::=     width height id max progressmade
+
+width           ::=     WIDTH '=' '"' VALUEINT '"' | WIDTH '=' '"' VALUESTR '"'
+height          ::=     HEIGHT '=' '"' VALUEINT '"' | HEIGTH '=' '"' VALUESTR '"'
+text            ::=     TEXT '=' '"' VALUESTR '"'
+src             ::=     SRC '=' '"' VALUESTR '"'
+childamount     ::=     CHILDAMOUNT '=' '"' VALUEINT '"'
+id              ::=     ID '=' '"' VALUESTR '"' | ε
+orientation     ::=     ORIENTATION '=' '"' VALUESTR '"' | ε
+color           ::=     COLOR '=' '"' VALUESTR '"' | ε
+padding         ::=     PADDING '=' '"' VALUEINT '"' | ε
+max             ::=     MAX '=' '"' VALUEINT '"' | ε
+progressmade    ::=     PROGRESSMADE '=' '"' VALUEINT '"' | ε
+checkedbtn      ::=     CHECKEDBTN '=' '"' VALUESTR '"' | ε

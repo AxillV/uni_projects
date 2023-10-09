@@ -1,0 +1,30 @@
+<RelativeLayout
+	android:layout_width="22"
+	android:layout_height="match_parent">
+	
+	<RadioGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:childrenAmount="-1"
+		android:checkedButton="RB32">
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB1"
+			android:text="Option 1"/>
+
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB1"
+			android:text="option 2"/>
+<!--
+		<RadioButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="RB2"
+			android:text="option 2"/>
+-->
+	</RadioGroup>
+</RelativeLayout>

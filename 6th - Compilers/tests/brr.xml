@@ -1,0 +1,20 @@
+<RelativeLayout
+	android:layout_width="22"
+	android:layout_height="match_parent"
+	android:id="hello">
+	
+	<ProgressBar
+		android:layout_width="22"
+		android:layout_height="22"
+		android:max="150"
+		android:progress="100"/>
+	<ProgressBar
+		android:layout_width="22"
+		android:layout_height="22"
+		android:max="150"
+		android:progress="151"/>
+	<ProgressBar
+		android:layout_width="22"
+		android:layout_height="22"
+		android:progress="-92"/>
+</RelativeLayout>
