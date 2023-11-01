@@ -1,5 +1,1 @@
-Reports Pending:
-OOP, Compilers1, Data Structures (+ readme)
-
-Reuploaded from private repos over the years.
-
+Reuploaded from private repos over the years in order to respect the privacy of others and to avoid humiliating us with the silly commit names :)
